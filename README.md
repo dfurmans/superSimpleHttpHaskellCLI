@@ -1,1 +1,1 @@
-# superSimpleHttpHaskellCLI
+# haskell-http
