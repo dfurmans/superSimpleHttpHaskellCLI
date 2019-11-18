@@ -8,8 +8,9 @@ import Lib
 
 main :: IO ()
 main = do
-  putStrLn "Please provide the URL"  
+  putStrLn "Please provide an URL to ask for :: "  
   url <- getLine
-  response <- httpLBS "http://google.es"
+  request <- parseRequest url
+  response <- httpLBS request
   let status = getResponseStatusCode response
-  putStrLn ("Hey " ++ show status ++ ", you rock!")  
+  putStrLn ("Hey " ++ show status ++ ", you rock!")
