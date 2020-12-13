@@ -1,5 +1,5 @@
 ## haskell-http
-Starter ::
-stack update
-stack build
-stack exec haskell-http-exe
+### Starter ::
+0. stack update
+1. stack build
+2. stack exec haskell-http-exe
